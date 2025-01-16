@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我們</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #a32323;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-info h2 {
+            color: #a32323;
+            margin-bottom: 10px;
+        }
+
+        .form-container {
+            margin-top: 20px;
+        }
+
+        form {
+            display: grid;
+            gap: 10px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #a32323;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #831c1c;
+        }
+
+        .info {
+            font-size: 14px;
+        }
+
+        .info p {
+            margin: 5px 0;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin-right: 10px;
+            color: #a32323;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            min-width: 200px;
+            padding: 10px 0;
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            font-size: 14px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: #a32323;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.30808-6/434739338_7699552686731049_9091522336767432860_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=pQMUxcgGWYkQ7kNvgF43ryN&_nc_zt=23&_nc_ht=scontent.ftpe7-1.fna&_nc_gid=AW_UqrhU4p-_OQzElwLonhx&oh=00_AYBOkHiPYw7bo51McstbgqkFaNs1qvnnFj3mDZxNBAQfDQ&oe=678BED31" 
+        alt="Logo" 
+        width="100" 
+        height="200">
+        <nav>
+            <div class="dropdown">
+                <a href="#">關於我們</a>
+                <div class="dropdown-content">
+                    <a href="index.html">公司介紹</a>
+                </div>
+            </div>
+            <a href="#">服務流程</a>
+            <a href="#">服務契約</a>
+            <div class="dropdown">
+                <a href="#">相關資訊</a>
+                <div class="dropdown-content">
+                    <a href="#">問題 Q&A</a>
+                </div>
+            </div>
+            <a href="#">聯絡我們</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="contact-info">
+            <h2>公司資訊</h2>
+            <p><strong></strong></p>
+            <p>手機：0900-172620</p>
+            <p>電話：0900-172620</p>
+            <p>傳真：</p>
+            <p>地址：</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="屏東, 專業, 生命禮儀, 高屏, 福龍">
+    <meta name="author" content="葬儀社">
+    <title>福龍生命禮儀</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #a32323;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-info h2 {
+            color: #a32323;
+            margin-bottom: 10px;
+        }
+        .contact-info img {
+            width: 140px;
+            height: 140px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .contact-info img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        @media (max-width: 480px) {
+            .contact-info img {
+                width: 80px;
+                height: 80px;
+            }
+            header nav a {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <script>
+        function detectmob() { 
+            if (navigator.userAgent.match(/Android/i) ||
+                navigator.userAgent.match(/webOS/i) ||
+                navigator.userAgent.match(/iPhone/i) ||
+                navigator.userAgent.match(/iPad/i) ||
+                navigator.userAgent.match(/iPod/i) ||
+                navigator.userAgent.match(/BlackBerry/i) ||
+                navigator.userAgent.match(/Windows Phone/i)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        window.onload = function () {
+            if (detectmob()) {
+                document.body.style.backgroundColor = "#e6f7ff"; // 行動裝置更改背景顏色
+                alert("您正在使用行動裝置瀏覽本網站");
+            }
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <img src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.30808-6/434739338_7699552686731049_9091522336767432860_n.jpg" 
+        alt="Logo" width="100" height="200">
+        <nav>
+            <div class="dropdown">
+                <a href="#">關於我們</a>
+                <div class="dropdown-content">
+                    <a href="index.html">公司介紹</a>
+                </div>
+            </div>
+            <a href="#">服務流程</a>
+            <a href="#">服務契約</a>
+            <div class="dropdown">
+                <a href="#">相關資訊</a>
+                <div class="dropdown-content">
+                    <a href="#">問題 Q&A</a>
+                </div>
+            </div>
+            <a href="聯絡我們.html">聯絡我們</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="contact-info">
+            <h2>公司簡介</h2>
+            <div>
+                <img src="https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.30808-6/434760878_7699552460064405_2809457648568895338_n.jpg" alt="Image 1">
+                <img src="https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.30808-6/472041588_9324912350861733_1305637260363882840_n.jpg" alt="Image 2">
+                <img src="https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.30808-6/472087577_9324912520861716_5780482995420564474_n.jpg" alt="Image 3">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
